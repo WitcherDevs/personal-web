@@ -1,9 +1,9 @@
 <template>
   <div>
-    <Navbar />
-    <div class="flex">
+    <div class="flex flex-row">
       <Menu />
-      <NuxtPage />
+      <slot />
+      <Navbar />
     </div>
   </div>
 </template>
