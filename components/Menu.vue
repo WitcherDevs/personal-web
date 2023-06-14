@@ -17,8 +17,8 @@
           <Icon name="mdi:email" size="48" color="white" />
         </a>
       </div>
-      <h6 class="mt-auto mb-[0.6rem] text-white w-24 mx-auto font-serif">Web design by
-        <span class="text-red-600/90 font-bold">Witcher</span>
+      <h6 class="mt-auto mb-[0.6rem] text-white w-26 mx-auto">Web design by
+        <span class="text-red-600/90 font-extrabold uppercase">Witcher</span>
       </h6>
     </div>
   </section>
