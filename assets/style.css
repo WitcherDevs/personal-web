@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply bg-gradient-to-b from-[#000000] to-[#3e3e3e] h-screen;
+  @apply bg-gradient-to-b from-[#000000] to-[#3e3e3e] h-screen text-white;
 }
 
 .page-enter-active,
