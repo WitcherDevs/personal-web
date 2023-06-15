@@ -1,10 +1,10 @@
 <template>
   <section>
-    <div class=" w-[11rem] h-screen bg-[#464646] flex flex-col text-center">
-      <h1 class="text-center text-[2rem] text-red-600/90 font-extrabold mt-[0.6rem]">WITCHER</h1>
+    <div class="w-[11rem] h-screen bg-[#464646] flex flex-col text-center shadow-xl shadow-[#575757]">
+      <h1 class="text-center text-[2rem] text-red-600/90 font-extrabold mt-[0.6rem] italic">WITCHER</h1>
       <h3
-        class="rotatetext mt-[4.4rem] rotate-180 text-white text-[2.5rem] uppercase tracking-wider mx-auto font-thin ml-auto">
-        The best until we do better
+        class="rotatetext mt-[4.4rem] rotate-180 text-white text-[2.6rem] uppercase tracking-widest mx-auto font-thin ml-auto">
+        Practice makes perfect
       </h3>
       <div class="grid grid-cols-3 mt-[4.4rem] mx-auto gap-3">
         <a target="_blank" href="https://github.com/WitcherDevs">
