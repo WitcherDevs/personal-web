@@ -1,9 +1,9 @@
 <template>
   <div>
     <div class="flex flex-row">
-      <Menu />
+      <Menu class="hidden md:flex" />
       <div class="flex flex-col w-full">
-        <Navbar />
+        <Navbar class="hidden md:flex" />
         <slot />
       </div>
     </div>

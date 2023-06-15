@@ -22,14 +22,14 @@ const technologies = [
 </script>
 
 <template>
-  <section class="mt-20 flex flex-col ml-20">
-    <h1 class="text-5xl font-extrabold italic tracking-wider">THE WITCHER</h1>
-    <h3 class="text-3xl font-mono mt-1 tracking-widest">Technologies I Use</h3>
-    <div class="mt-[10rem] flex flex-row">
-      <div class="grid grid-cols-6 gap-12 bg-white/20 h-[30rem] rounded-lg">
+  <section class="mt-12 md:mt-20 flex flex-col ml-0 md:ml-20">
+    <h1 class="text-5xl font-extrabold italic tracking-wider ml-8">THE WITCHER</h1>
+    <h3 class="text-3xl font-mono mt-1 tracking-widest ml-8">Technologies I Use</h3>
+    <div class="mt-[7rem] md:mt-[10rem] flex flex-row">
+      <div class="grid grid-cols-3 md:grid-cols-6 gap-12 bg-white/20 h-[30rem] rounded-lg overflow-auto">
         <Icon v-for="(item) in technologies" :name="item" size="90" class="m-4" />
       </div>
-      <div class="grid grid-cols-2 grid-flow-row ml-28 gap-[10rem]">
+      <div class="hidden md:grid grid-cols-2 grid-flow-row ml-28 gap-[10rem]">
         <span class="bg-[#171717]/60 w-44 h-44 rounded-full backdrop-blur-3" />
         <span class="bg-[#171717]/60 w-44 h-44 rounded-full backdrop-blur-3" />
         <span class="bg-[#171717]/60 w-44 h-44 rounded-full backdrop-blur-3" />
