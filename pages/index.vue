@@ -2,7 +2,7 @@
   <section class="mt-12 md:mt-20 flex flex-col ml-8 md:ml-20">
     <h1 class="text-5xl font-extrabold italic tracking-wider">THE WITCHER</h1>
     <h3 class="text-3xl font-mono mt-1 tracking-widest">Backend Developer</h3>
-    <div class="mt-[8rem] md:mt-[14rem] flex flex-row">
+    <div class="mt-[7rem] md:mt-[14rem] flex flex-row">
       <div>
         <h3 class="text-2xl md:w-[50rem] leading-snug">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo,
           assumenda
@@ -12,7 +12,7 @@
           aperiam nam porro rem sit. Aliquid distinctio porro quisquam unde tenetur ducimus eveniet soluta, aperiam
           beatae.
         </h3>
-        <button class="mt-[8rem] md:mt-[12rem] w-52 bg-red-600/90 h-14 rounded-lg text-3xl italic shadow-xl"
+        <button class="mt-[7rem] md:mt-[12rem] w-52 bg-red-600/90 h-14 rounded-lg text-3xl italic shadow-xl"
           @click="$router.push('/technologies')">Technologies</button>
       </div>
       <div class="hidden md:grid grid-cols-2 grid-flow-row ml-28 gap-[10rem]">
