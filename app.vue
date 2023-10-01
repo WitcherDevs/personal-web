@@ -1,7 +1,7 @@
 <template>
-  <div>
-    <NuxtLayout>
-      <NuxtPage :key="$route.fullPath" />
-    </NuxtLayout>
+  <div class="flex flex-col">
+    <Navbar />
+    <NuxtPage />
+    <Footer />
   </div>
 </template>
