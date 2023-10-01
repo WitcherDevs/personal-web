@@ -32,8 +32,7 @@ export default defineNuxtConfig({
         },
         {
           name: "og:title",
-          content:
-            "A website where you can access information about me and is used for personal purposes. Developed by Witcher.",
+          content: "Witcher Personal Website",
         },
         {
           name: "name",
