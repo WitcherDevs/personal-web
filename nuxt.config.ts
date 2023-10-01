@@ -27,7 +27,8 @@ export default defineNuxtConfig({
         },
         {
           name: "keywords",
-          content: "Witcher, Witcher Personal Website, Witcher Website, developer, witcher, witcherdev",
+          content:
+            "Witcher, Witcher Personal Website, Witcher Website, developer, witcher, witcherdev",
         },
         {
           name: "og:title",
@@ -36,8 +37,7 @@ export default defineNuxtConfig({
         },
         {
           name: "name",
-          content:
-            "Witcher Personal Website",
+          content: "Witcher Personal Website",
         },
         {
           name: "og:description",
@@ -46,28 +46,28 @@ export default defineNuxtConfig({
         },
         {
           name: "icon",
-          content: "https://witcherdev.net/favicon.ico"
+          content: "https://witcherdev.net/favicon.ico",
         },
         {
           name: "og:type",
-          content: "website"
+          content: "website",
         },
         {
           name: "og:url",
-          content: "https://witcherdev.net"
+          content: "https://witcherdev.net",
         },
         {
           name: "copyright",
-          content: "Witcher"
+          content: "Witcher",
         },
         {
           name: "author",
-          content: "Witcher"
+          content: "Witcher",
         },
         {
           name: "theme-color",
-          content: "#e50d25"
-        }
+          content: "#e50d25",
+        },
         {
           charset: "utf-8",
         },
