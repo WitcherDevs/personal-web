@@ -12,10 +12,15 @@
     "@animxyz/core": "^0.6.6",
     "@animxyz/vue3": "^0.6.7",
     "@nuxt/devtools": "latest",
-    "autoprefixer": "^10.4.15",
-    "nuxt": "^3.7.1",
+    "autoprefixer": "^10.4.21",
+    "nuxt": "^3.17.5",
     "nuxt-icon": "^0.5.0",
-    "postcss": "^8.4.29",
-    "tailwindcss": "^3.3.3"
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.17"
+  },
+  "dependencies": {
+    "@nuxtjs/i18n": "^9.5.6",
+    "@vueuse/core": "^13.4.0",
+    "vue-i18n": "9"
   }
 }

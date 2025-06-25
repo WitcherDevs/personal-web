@@ -6,6 +6,55 @@ body {
   @apply bg-neutral-900 text-gray-100 text-base font-sans;
 }
 
+/* Responsive improvements */
+@media (max-width: 640px) {
+  .container {
+    @apply px-4;
+  }
+}
+
+/* Button styles */
+.btn-primary {
+  @apply inline-flex items-center px-6 py-3 bg-red-600 text-white font-semibold rounded-lg transition-all duration-300 hover:bg-red-700 hover:transform hover:scale-105 shadow-lg hover:shadow-xl;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center px-6 py-3 border-2 border-red-600 text-red-600 font-semibold rounded-lg transition-all duration-300 hover:bg-red-600 hover:text-white hover:transform hover:scale-105;
+}
+
+/* Navigation link styles */
+.nav-link {
+  @apply relative font-medium;
+}
+
+.nav-link::after {
+  @apply content-[''] absolute bottom-0 left-0 w-0 h-0.5 bg-red-600 transition-all duration-300;
+}
+
+.nav-link:hover::after {
+  @apply w-full;
+}
+
+/* Profile bounce animation */
+@keyframes profile-bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-profile-bounce {
+  animation: profile-bounce 10s ease-in-out infinite;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Page transitions */
 .page-enter-active,
 .page-leave-active {
   transition: opacity 0.25s;
@@ -24,4 +73,31 @@ body {
 .fade-enter-from,
 .fade-leave-to {
   opacity: 0;
+}
+
+/* Responsive text adjustments */
+@media (max-width: 640px) {
+  h1 {
+    @apply text-4xl;
+  }
+  h2 {
+    @apply text-3xl;
+  }
+  h3 {
+    @apply text-xl;
+  }
+}
+
+/* Mobile menu improvements */
+@media (max-width: 768px) {
+  .mobile-menu-enter-active,
+  .mobile-menu-leave-active {
+    transition: all 0.3s ease;
+  }
+  
+  .mobile-menu-enter-from,
+  .mobile-menu-leave-to {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
 }

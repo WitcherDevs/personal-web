@@ -20,7 +20,6 @@ export default defineNuxtConfig({
       },
       meta: [
         {
-          hid: "description",
           name: "description",
           content:
             "A website where you can access information about me and is used for personal purposes. Developed by Witcher.",
