@@ -16,11 +16,6 @@
               alt="icon"
               class="w-12 h-12 transition-transform duration-300 group-hover:rotate-12"
             />
-            <span
-              class="text-xl font-bold transition-colors duration-300"
-              :class="isDark ? 'text-gray-100' : 'text-gray-900'"
-              >Witcher</span
-            >
           </NuxtLink>
 
           <!-- Desktop Navigation -->
