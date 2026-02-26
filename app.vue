@@ -1,12 +1,12 @@
 <template>
   <div
     class="min-h-screen transition-colors duration-300"
-    :class="isDark ? 'bg-neutral-900' : 'bg-purple-50'"
+    :class="isDark ? 'bg-neutral-900' : 'bg-white'"
   >
     <!-- Modern Navbar -->
     <nav
       class="fixed top-0 w-full z-50 backdrop-blur-md border-b transition-colors duration-300"
-      :class="isDark ? 'bg-neutral-900/80 border-neutral-800' : 'bg-purple-100/80 border-purple-200'"
+      :class="isDark ? 'bg-neutral-900/80 border-neutral-800' : 'bg-white/80 border-gray-200'"
     >
       <div class="max-w-7xl mx-auto px-6 py-4">
         <div class="flex justify-between items-center">
@@ -24,7 +24,7 @@
               href="#home"
               :class="[
                 'nav-link transition-all duration-300 hover:scale-110',
-                isDark ? 'text-gray-100 hover:text-white' : 'text-gray-900 hover:text-black',
+                isDark ? 'text-gray-100 hover:text-red-400' : 'text-gray-900 hover:text-red-600',
               ]"
               >Home</a
             >
@@ -32,7 +32,7 @@
               href="#about"
               :class="[
                 'nav-link transition-all duration-300 hover:scale-110',
-                isDark ? 'text-gray-100 hover:text-white' : 'text-gray-900 hover:text-black',
+                isDark ? 'text-gray-100 hover:text-red-400' : 'text-gray-900 hover:text-red-600',
               ]"
               >About</a
             >
@@ -40,7 +40,7 @@
               href="#projects"
               :class="[
                 'nav-link transition-all duration-300 hover:scale-110',
-                isDark ? 'text-gray-100 hover:text-white' : 'text-gray-900 hover:text-black',
+                isDark ? 'text-gray-100 hover:text-red-400' : 'text-gray-900 hover:text-red-600',
               ]"
               >Projects</a
             >
@@ -48,7 +48,7 @@
               href="#technologies"
               :class="[
                 'nav-link transition-all duration-300 hover:scale-110',
-                isDark ? 'text-gray-100 hover:text-white' : 'text-gray-900 hover:text-black',
+                isDark ? 'text-gray-100 hover:text-red-400' : 'text-gray-900 hover:text-red-600',
               ]"
               >Technologies</a
             >
@@ -56,7 +56,7 @@
               href="#contact"
               :class="[
                 'nav-link transition-all duration-300 hover:scale-110',
-                isDark ? 'text-gray-100 hover:text-white' : 'text-gray-900 hover:text-black',
+                isDark ? 'text-gray-100 hover:text-red-400' : 'text-gray-900 hover:text-red-600',
               ]"
               >Contact</a
             >
@@ -105,7 +105,7 @@
       <div
         v-show="mobileMenuOpen"
         class="md:hidden border-t transition-colors duration-300"
-        :class="isDark ? 'bg-neutral-800 border-neutral-700' : 'bg-purple-100 border-purple-200'"
+        :class="isDark ? 'bg-neutral-800 border-neutral-700' : 'bg-white border-gray-200'"
       >
         <div class="px-6 py-4 space-y-4">
           <a
@@ -151,21 +151,21 @@
         class="absolute inset-0 transition-colors duration-300"
         :class="
           isDark
-            ? 'bg-gradient-to-br from-purple-900/20 to-neutral-900'
-            : 'bg-gradient-to-br from-purple-200/50 to-purple-50'
+            ? 'bg-gradient-to-br from-red-900/20 to-neutral-900'
+            : 'bg-gradient-to-br from-gray-100/50 to-white'
         "
       ></div>
       <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 text-center">
         <div class="mb-8">
           <div class="relative inline-block">
             <div
-              class="absolute inset-0 bg-purple-400 rounded-2xl transform rotate-6 animate-pulse"
+              class="absolute inset-0 bg-red-800 rounded-2xl transform rotate-6 animate-pulse"
             ></div>
             <div
               class="relative bg-gray-200 w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 rounded-2xl flex items-center justify-center transform -rotate-3"
             >
               <div
-                class="bg-purple-300 w-28 h-28 sm:w-36 sm:h-36 md:w-44 md:h-44 rounded-xl flex items-center justify-center transform rotate-3"
+                class="bg-red-800 w-28 h-28 sm:w-36 sm:h-36 md:w-44 md:h-44 rounded-xl flex items-center justify-center transform rotate-3"
               >
                 <img
                   src="/photo.png"
@@ -181,17 +181,18 @@
           class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 bg-gradient-to-r transition-colors duration-300"
           :class="
             isDark
-              ? 'from-gray-100 to-purple-400 bg-clip-text text-transparent'
-              : 'from-purple-900 to-purple-600 bg-clip-text text-transparent'
+              ? 'from-gray-100 to-red-400 bg-clip-text text-transparent'
+              : 'from-gray-900 to-red-600 bg-clip-text text-transparent'
           "
         >
-          Hello, I'm Çağrı
+          Hello, I'm Witcher
         </h1>
         <p
           class="text-lg sm:text-xl md:text-2xl mb-8 max-w-3xl mx-auto transition-colors duration-300 px-4"
           :class="isDark ? 'text-gray-300' : 'text-gray-600'"
         >
-          I'm 19 years old and have been interested in software development for 5 years. <br> <span class="text-purple-600 font-semibold italic">HR</span>
+          I'm 19 years old and have been interested in software development for 5 years. I'm known
+          as <span class="text-red-600 font-semibold italic">Witcher</span>.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center px-4">
           <a href="#about" class="btn-primary" v-intersect="'left'"> About Me </a>
@@ -217,7 +218,7 @@
     <section
       id="about"
       class="py-16 sm:py-20 transition-colors duration-300 px-4 sm:px-6"
-      :class="isDark ? 'bg-neutral-800/50' : 'bg-purple-50'"
+      :class="isDark ? 'bg-neutral-800/50' : 'bg-gray-50'"
     >
       <div class="max-w-7xl mx-auto">
         <div class="text-center mb-12 sm:mb-16">
@@ -227,7 +228,7 @@
           >
             About Me
           </h2>
-          <div class="w-24 h-1 bg-purple-600 mx-auto"></div>
+          <div class="w-24 h-1 bg-red-600 mx-auto"></div>
         </div>
 
         <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
@@ -244,29 +245,29 @@
               class="text-base sm:text-lg leading-relaxed transition-colors duration-300"
               :class="isDark ? 'text-gray-300' : 'text-gray-600'"
             >
-              I have experience in web applications and blockchain technologies. I
+              I have experience in Discord bots, web applications, and blockchain technologies. I
               love contributing to open source projects and sharing with the community.
             </p>
             <div class="flex flex-wrap gap-3 sm:gap-4">
               <div
                 class="px-3 sm:px-4 py-2 rounded-lg transition-colors duration-300 text-sm sm:text-base"
-                :class="isDark ? 'bg-neutral-700' : 'bg-purple-200'"
+                :class="isDark ? 'bg-neutral-700' : 'bg-gray-200'"
               >
-                <span class="text-purple-600 font-semibold">5+</span>
+                <span class="text-red-600 font-semibold">5+</span>
                 <span :class="isDark ? 'text-gray-300' : 'text-gray-600'">Years Experience</span>
               </div>
               <div
                 class="px-3 sm:px-4 py-2 rounded-lg transition-colors duration-300 text-sm sm:text-base"
-                :class="isDark ? 'bg-neutral-700' : 'bg-purple-200'"
+                :class="isDark ? 'bg-neutral-700' : 'bg-gray-200'"
               >
-                <span class="text-purple-600 font-semibold">100+</span>
+                <span class="text-red-600 font-semibold">100+</span>
                 <span :class="isDark ? 'text-gray-300' : 'text-gray-600'">Projects</span>
               </div>
               <div
                 class="px-3 sm:px-4 py-2 rounded-lg transition-colors duration-300 text-sm sm:text-base"
-                :class="isDark ? 'bg-neutral-700' : 'bg-purple-200'"
+                :class="isDark ? 'bg-neutral-700' : 'bg-gray-200'"
               >
-                <span class="text-purple-600 font-semibold">15+</span>
+                <span class="text-red-600 font-semibold">15+</span>
                 <span :class="isDark ? 'text-gray-300' : 'text-gray-600'">Technologies</span>
               </div>
             </div>
@@ -277,8 +278,8 @@
               class="p-6 sm:p-8 rounded-2xl border transition-colors duration-300"
               :class="
                 isDark
-                  ? 'bg-gradient-to-br from-purple-900/20 to-neutral-700/20 border-neutral-600'
-                  : 'bg-gradient-to-br from-purple-200/50 to-purple-50/50 border-purple-300'
+                  ? 'bg-gradient-to-br from-red-800/20 to-neutral-700/20 border-neutral-600'
+                  : 'bg-gradient-to-br from-red-100/50 to-gray-100/50 border-gray-300'
               "
             >
               <h3
@@ -290,9 +291,9 @@
               <div class="grid grid-cols-2 gap-3 sm:gap-4">
                 <div
                   class="text-center p-3 sm:p-4 rounded-lg transition-colors duration-300"
-                  :class="isDark ? 'bg-neutral-700' : 'bg-purple-200'"
+                  :class="isDark ? 'bg-neutral-700' : 'bg-gray-200'"
                 >
-                  <div class="text-2xl sm:text-3xl font-bold text-purple-600 mb-2">5+</div>
+                  <div class="text-2xl sm:text-3xl font-bold text-red-600 mb-2">5+</div>
                   <div
                     class="text-xs sm:text-sm transition-colors duration-300"
                     :class="isDark ? 'text-gray-300' : 'text-gray-600'"
@@ -304,7 +305,7 @@
                   class="text-center p-3 sm:p-4 rounded-lg transition-colors duration-300"
                   :class="isDark ? 'bg-neutral-700' : 'bg-gray-200'"
                 >
-                  <div class="text-2xl sm:text-3xl font-bold text-purple-600 mb-2">100+</div>
+                  <div class="text-2xl sm:text-3xl font-bold text-red-600 mb-2">100+</div>
                   <div
                     class="text-xs sm:text-sm transition-colors duration-300"
                     :class="isDark ? 'text-gray-300' : 'text-gray-600'"
@@ -316,7 +317,7 @@
                   class="text-center p-3 sm:p-4 rounded-lg transition-colors duration-300"
                   :class="isDark ? 'bg-neutral-700' : 'bg-gray-200'"
                 >
-                  <div class="text-2xl sm:text-3xl font-bold text-purple-600 mb-2">15+</div>
+                  <div class="text-2xl sm:text-3xl font-bold text-red-600 mb-2">15+</div>
                   <div
                     class="text-xs sm:text-sm transition-colors duration-300"
                     :class="isDark ? 'text-gray-300' : 'text-gray-600'"
@@ -328,7 +329,7 @@
                   class="text-center p-3 sm:p-4 rounded-lg transition-colors duration-300"
                   :class="isDark ? 'bg-neutral-700' : 'bg-gray-200'"
                 >
-                  <div class="text-2xl sm:text-3xl font-bold text-purple-600 mb-2">20+</div>
+                  <div class="text-2xl sm:text-3xl font-bold text-red-600 mb-2">20+</div>
                   <div
                     class="text-xs sm:text-sm transition-colors duration-300"
                     :class="isDark ? 'text-gray-300' : 'text-gray-600'"
@@ -353,7 +354,7 @@
           >
             My Projects
           </h2>
-          <div class="w-24 h-1 bg-purple-600 mx-auto"></div>
+          <div class="w-24 h-1 bg-red-600 mx-auto"></div>
         </div>
 
         <div class="grid sm:grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
@@ -363,20 +364,20 @@
             class="group rounded-xl p-4 sm:p-6 border transition-all duration-300 hover:transform hover:scale-105"
             :class="
               isDark
-                ? 'bg-neutral-800 border-neutral-700 hover:border-purple-500'
-                : 'bg-purple-50 border-purple-200 hover:border-purple-600 shadow-lg'
+                ? 'bg-neutral-800 border-neutral-700 hover:border-red-600'
+                : 'bg-white border-gray-200 hover:border-red-600 shadow-lg'
             "
             v-intersect="index % 2 === 0 ? 'right' : 'left'"
           >
             <div class="flex items-start space-x-3 sm:space-x-4">
               <div
-                class="bg-purple-200 p-2 sm:p-3 rounded-lg group-hover:bg-purple-300 transition-colors flex-shrink-0"
+                class="bg-red-800 p-2 sm:p-3 rounded-lg group-hover:bg-red-700 transition-colors flex-shrink-0"
               >
-                <Icon name="ph:code" size="24" class="sm:w-8 sm:h-8 text-purple-900" />
+                <Icon name="ph:code" size="24" class="sm:w-8 sm:h-8 text-white" />
               </div>
               <div class="flex-1 min-w-0">
                 <h3
-                  class="text-lg sm:text-xl font-bold mb-2 group-hover:text-purple-600 transition-colors transition-colors duration-300"
+                  class="text-lg sm:text-xl font-bold mb-2 group-hover:text-red-600 transition-colors transition-colors duration-300"
                   :class="isDark ? 'text-gray-100' : 'text-gray-900'"
                 >
                   {{ project.name }}
@@ -391,7 +392,7 @@
                   <a
                     :href="project.link"
                     target="_blank"
-                    class="inline-flex items-center space-x-2 text-purple-600 hover:text-purple-700 transition-colors text-sm sm:text-base"
+                    class="inline-flex items-center space-x-2 text-red-600 hover:text-red-500 transition-colors text-sm sm:text-base"
                   >
                     <span>View Project</span>
                     <Icon name="mdi:open-in-new" size="16" />
@@ -408,7 +409,7 @@
     <section
       id="technologies"
       class="py-16 sm:py-20 transition-colors duration-300 px-4 sm:px-6"
-      :class="isDark ? 'bg-neutral-800/50' : 'bg-purple-50'"
+      :class="isDark ? 'bg-neutral-800/50' : 'bg-gray-50'"
     >
       <div class="max-w-7xl mx-auto">
         <div class="text-center mb-12 sm:mb-16">
@@ -418,7 +419,7 @@
           >
             Technologies
           </h2>
-          <div class="w-24 h-1 bg-purple-600 mx-auto"></div>
+          <div class="w-24 h-1 bg-red-600 mx-auto"></div>
           <p
             class="text-base sm:text-lg mt-4 transition-colors duration-300"
             :class="isDark ? 'text-gray-300' : 'text-gray-600'"
@@ -434,13 +435,13 @@
             v-for="(tech, index) in technologies"
             :key="tech"
             class="group flex flex-col items-center space-y-2 p-3 sm:p-4 rounded-lg transition-all duration-300 hover:transform hover:scale-110"
-            :class="isDark ? 'hover:bg-neutral-700' : 'hover:bg-purple-200'"
+            :class="isDark ? 'hover:bg-neutral-700' : 'hover:bg-gray-200'"
             v-intersect="index % 2 === 0 ? 'right' : 'left'"
           >
             <Icon
               :name="tech"
               size="32"
-              class="sm:w-12 sm:h-12 lg:w-12 lg:h-12 group-hover:text-purple-600 transition-colors"
+              class="sm:w-12 sm:h-12 lg:w-12 lg:h-12 group-hover:text-red-600 transition-colors"
             />
           </div>
         </div>
@@ -457,7 +458,7 @@
           >
             Contact
           </h2>
-          <div class="w-24 h-1 bg-purple-600 mx-auto"></div>
+          <div class="w-24 h-1 bg-red-600 mx-auto"></div>
           <p
             class="text-base sm:text-lg mt-4 transition-colors duration-300"
             :class="isDark ? 'text-gray-300' : 'text-gray-600'"
@@ -466,22 +467,22 @@
           </p>
         </div>
 
-        <div class="grid sm:grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+        <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           <div
             v-for="(platform, index) in platforms"
             :key="platform.name"
             class="group rounded-xl p-6 sm:p-8 border transition-all duration-300 hover:transform hover:scale-105 text-center"
             :class="
               isDark
-                ? 'bg-neutral-800 border-neutral-700 hover:border-purple-500'
-                : 'bg-purple-50 border-purple-200 hover:border-purple-600 shadow-lg'
+                ? 'bg-neutral-800 border-neutral-700 hover:border-red-600'
+                : 'bg-white border-gray-200 hover:border-red-600 shadow-lg'
             "
             v-intersect="index % 2 === 0 ? 'right' : 'left'"
           >
             <div
-              class="flex items-center justify-center bg-purple-200 p-3 sm:p-4 rounded-full w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-4 sm:mb-6 group-hover:bg-purple-300 transition-colors"
+              class="flex items-center justify-center bg-red-800 p-3 sm:p-4 rounded-full w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-4 sm:mb-6 group-hover:bg-red-700 transition-colors"
             >
-              <Icon :name="platform.icon" size="32" class="sm:w-16 sm:h-16 text-purple-900" />
+              <Icon :name="platform.icon" size="32" class="sm:w-16 sm:h-16 text-white" />
             </div>
             <h3
               class="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 transition-colors duration-300"
@@ -499,9 +500,19 @@
               <a
                 href="https://discord.com/users/299955838368612353"
                 target="_blank"
-                class="inline-flex items-center space-x-2 text-purple-600 hover:text-purple-700 transition-colors text-sm sm:text-base"
+                class="inline-flex items-center space-x-2 text-red-600 hover:text-red-500 transition-colors text-sm sm:text-base"
               >
                 <span>Visit My Profile</span>
+                <Icon name="mdi:open-in-new" size="16" />
+              </a>
+            </div>
+            <div v-if="platform.name === 'Discord Server'" class="mt-3 sm:mt-4">
+              <a
+                href="https://discord.gg/serendia"
+                target="_blank"
+                class="inline-flex items-center space-x-2 text-red-600 hover:text-red-500 transition-colors text-sm sm:text-base"
+              >
+                <span>Join Server</span>
                 <Icon name="mdi:open-in-new" size="16" />
               </a>
             </div>
@@ -513,43 +524,64 @@
     <!-- Footer -->
     <footer
       class="border-t py-6 sm:py-8 transition-colors duration-300 px-4 sm:px-6"
-      :class="isDark ? 'bg-neutral-900 border-neutral-800' : 'bg-purple-50 border-purple-200'"
+      :class="isDark ? 'bg-neutral-900 border-neutral-800' : 'bg-white border-gray-200'"
     >
       <div class="max-w-7xl mx-auto">
         <div class="flex flex-col sm:flex-row justify-between items-center">
-          <div class="flex items-start space-x-3 mb-4 sm:mb-0">
-            <div>💜</div>
+          <div class="flex items-center space-x-3 mb-4 sm:mb-0">
+            <img src="~/assets/icon.png" alt="icon" class="w-6 h-6 sm:w-8 sm:h-8" />
             <span
               class="text-base sm:text-lg font-bold transition-colors duration-300"
               :class="isDark ? 'text-gray-100' : 'text-gray-900'"
-              >RÂNÂ</span
+              >Witcher</span
             >
           </div>
 
           <div class="flex space-x-4 sm:space-x-6">
             <a
-              href="https://www.linkedin.com/in/cagrihaktan/"
+              href="https://discord.com/users/299955838368612353"
               target="_blank"
               class="transition-colors duration-300"
               :class="
-                isDark ? 'text-gray-400 hover:text-white' : 'text-purple-600 hover:text-purple-700'
+                isDark ? 'text-gray-400 hover:text-red-400' : 'text-gray-500 hover:text-red-600'
               "
             >
-              <Icon name="mdi:linkedin" size="20" class="sm:w-6 sm:h-6" />
+              <Icon name="mdi:discord" size="20" class="sm:w-6 sm:h-6" />
             </a>
             <a
               href="https://github.com/WitcherDevs"
               target="_blank"
               class="transition-colors duration-300"
               :class="
-                isDark ? 'text-gray-400 hover:text-white' : 'text-purple-600 hover:text-purple-700'
+                isDark ? 'text-gray-400 hover:text-red-400' : 'text-gray-500 hover:text-red-600'
               "
             >
               <Icon name="mdi:github-box" size="20" class="sm:w-6 sm:h-6" />
             </a>
+            <a
+              href="https://www.youtube.com/@WitcherDevs"
+              target="_blank"
+              class="transition-colors duration-300"
+              :class="
+                isDark ? 'text-gray-400 hover:text-red-400' : 'text-gray-500 hover:text-red-600'
+              "
+            >
+              <Icon name="uil:youtube" size="20" class="sm:w-6 sm:h-6" />
+            </a>
           </div>
         </div>
 
+        <div
+          class="text-center mt-4 sm:mt-6 pt-4 sm:pt-6 border-t transition-colors duration-300"
+          :class="isDark ? 'border-neutral-800' : 'border-gray-200'"
+        >
+          <p
+            class="text-sm sm:text-base transition-colors duration-300"
+            :class="isDark ? 'text-gray-400' : 'text-gray-500'"
+          >
+            © 2024 Witcher. All rights reserved.
+          </p>
+        </div>
       </div>
     </footer>
   </div>
@@ -569,10 +601,22 @@ const projects = ref([
     link: "https://serendiasquad.net",
   },
   {
+    name: "Discord Verified Bot",
+    description:
+      "I developed a bot designed entirely on requests that can be used by members using Discord and it was approved by Discord, but I closed the bot for materialistic reasons. Before it was closed, it had about 150 servers and 500 thousand users.",
+    link: "",
+  },
+  {
     name: "Algorand Module",
     description:
       "I developed a module that can be used to interact with the Algorand blockchain in NodeJS projects. I developed this module to make it easier for developers to interact with the Algorand blockchain, but it is still under development and has many shortcomings.",
     link: "https://github.com/WitcherDevs/algorandjs",
+  },
+  {
+    name: "Discord Bot Dashboard",
+    description:
+      "I developed a dashboard that can be used to manage a Discord bot. I developed this dashboard to make it easier for developers to manage Discord bots, but I left the project unfinished because I was busy. I used VueJS, TailwindCSS and ExpressJS in this project.",
+    link: "https://github.com/WitcherDevs/discord-bot-dashboard",
   },
 ]);
 
@@ -605,14 +649,19 @@ const technologies = ref([
 
 const platforms = ref([
   {
-    name: "LinkedIn",
-    icon: "mdi:linkedin",
-    value: "cagrihaktan",
+    name: "Discord",
+    icon: "mingcute:discord-fill",
+    value: "witcherdevv",
   },
   {
     name: "E-Mail",
     icon: "ic:baseline-email",
     value: "contact@witcherdev.net",
+  },
+  {
+    name: "Discord Server",
+    icon: "mingcute:discord-fill",
+    value: "discord.gg/serendia",
   },
 ]);
 
@@ -727,14 +776,14 @@ function scrollToAbout() {
 }
 
 .nav-link:hover {
-  @apply text-white;
+  @apply text-red-600;
 }
 
 .btn-primary {
-  @apply bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 inline-block;
+  @apply bg-red-800 hover:bg-red-700 text-white font-bold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 inline-block;
 }
 
 .btn-secondary {
-  @apply bg-transparent border-2 border-purple-600 text-purple-600 hover:bg-purple-600 hover:text-white font-bold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 inline-block;
+  @apply bg-transparent border-2 border-red-800 text-red-600 hover:bg-red-800 hover:text-white font-bold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 inline-block;
 }
 </style>
